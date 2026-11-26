@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pricing | Linkert</title>
+  <meta name="description" content="Harga paket Linkert: Personal untuk individu, Community untuk komunitas, dan Access untuk paket lengkap.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700;12..96,800&family=Instrument+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- NAVBAR (sama di semua halaman) -->
+<header class="nav" id="top">
+  <div class="container nav__inner">
+    <a href="index.html" class="nav__logo" aria-label="Linkert, ke beranda">
+      <img class="logo" src="img/logo 140x40.png" alt="Logo Linkert" width="111" height="50" />
+    </a>
+    <nav class="nav__menu" id="navMenu" aria-label="Menu utama">
+      <a href="index.html" class="nav__link">Solusi</a>
+      <a href="nfc-business-card.html" class="nav__link">Produk</a>
+      <a href="pricing.html" class="nav__link" aria-current="page">Pricing</a>
+    </nav>
+    <div class="nav__actions">
+      <a href="index.html#pesan" class="btn btn--primary btn--sm">Pesan</a>
+      <button class="burger" id="burger" aria-label="Buka menu" aria-expanded="false" aria-controls="navMenu"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+
+<main>
+
+<!-- HERO + KARTU PAKET -->
+<section class="p-hero">
+  <div class="container">
+    <h1>Harga untuk <span>kartu NFC Linkert</span></h1>
+    <p class="lead">Mulai dari satu kartu pribadi sampai kartu member untuk seluruh komunitas. Bayar sesuai kebutuhanmu.</p>
+
+    <div class="plans">
+      <article class="plan">
+        <div class="plan__head"><span class="plan__name">Personal</span></div>
+        <p class="plan__tag">Untuk individu</p>
+        <p class="price-tag" data-price="personal"><strong>Rp —</strong><span>Harga menyusul</span></p>
+        <a href="index.html?paket=personal&amp;produk=nfc-business-card#pesan" class="btn btn--ghost">Pesan Personal</a>
+        <div class="plan__divider"></div>
+        <p class="plan__list-title">Fitur utama:</p>
+        <ul class="checklist checklist--fill">
+          <li>Kartu NFC dengan QR cadangan</li>
+          <li>Profil dan portofolio online</li>
+          <li>Template website</li>
+          <li>Ubah isi tanpa cetak ulang</li>
+          <li>Desain kartu custom</li>
+        </ul>
+      </article>
+
+      <article class="plan plan--pop">
+        <div class="plan__head"><span class="plan__name">Community</span><span class="pill">Populer</span></div>
+        <p class="plan__tag">Untuk komunitas</p>
+        <p class="price-tag" data-price="community"><strong>Rp —</strong><span>Harga menyusul</span></p>
+        <a href="index.html?paket=community&amp;produk=kartu-member#pesan" class="btn btn--primary">Pesan Community</a>
+        <div class="plan__divider"></div>
+        <p class="plan__list-title">Semua fitur Personal, plus:</p>
+        <ul class="checklist checklist--fill">
+          <li>Kartu member bertanda eksklusif</li>
+          <li>Akses khusus sesuai permintaan</li>
+          <li>Desain mengikuti identitas komunitas</li>
+          <li>Daftar anggota lewat spreadsheet</li>
+          <li>Nonaktifkan kartu anggota yang keluar</li>
+        </ul>
+      </article>
+
+      <article class="plan">
+        <div class="plan__head"><span class="plan__name">Access</span></div>
+        <p class="plan__tag">Untuk organisasi</p>
+        <p class="price-tag" data-price="access"><strong>Custom</strong><span>Sesuai kebutuhan</span></p>
+        <a href="index.html?paket=access&amp;produk=kartu-member#pesan" class="btn btn--ghost">Jadwalkan konsultasi</a>
+        <div class="plan__divider"></div>
+        <p class="plan__list-title">Semua fitur Community, plus:</p>
+        <ul class="checklist checklist--fill">
+          <li>Integrasi antar fitur</li>
+          <li>Pendampingan tim Linkert</li>
+          <li>Prioritas produksi kartu</li>
+          <li>Laporan pemakaian kartu</li>
+        </ul>
+      </article>
+    </div>
+
+    <p class="p-note"><span>Butuh kartu dengan bentuk khusus? <a href="index.html#promo" class="link">Daftar minat kartu bentuk custom</a></span></p>
+  </div>
+</section>
+
+<!-- STRIP LOGO (CONFIG.showPartners di script.js) -->
+<section class="p-logos" id="partners" aria-label="Mitra komunitas">
+  <div class="container">
+    <p class="p-logos__stat">Dipakai oleh komunitas dan organisasi mahasiswa</p>
+    <div class="logo-row">
+      <div class="ph ph--logo-sm"><span>IMG-08</span><small>Logo 1</small></div>
+      <div class="ph ph--logo-sm"><span>IMG-08</span><small>Logo 2</small></div>
+      <div class="ph ph--logo-sm"><span>IMG-08</span><small>Logo 3</small></div>
+      <div class="ph ph--logo-sm"><span>IMG-08</span><small>Logo 4</small></div>
+      <div class="ph ph--logo-sm"><span>IMG-08</span><small>Logo 5</small></div>
+      <div class="ph ph--logo-sm"><span>IMG-08</span><small>Logo 6</small></div>
+      <div class="ph ph--logo-sm"><span>IMG-08</span><small>Logo 7</small></div>
+      <div class="ph ph--logo-sm"><span>IMG-08</span><small>Logo 8</small></div>
+    </div>
+  </div>
+</section>
+
+<!-- TABEL PERBANDINGAN -->
+<section class="section">
+  <div class="container">
+    <div class="section-head center">
+      <h2>Bandingkan paket dan fitur</h2>
+      <p class="lead">Semua yang termasuk di tiap paket, berdampingan.</p>
+    </div>
+
+    <div class="ctable-wrap">
+      <table class="ctable">
+        <colgroup><col class="c-label"><col><col><col></colgroup>
+        <thead>
+          <tr>
+            <th scope="col"><span class="sr-only">Fitur</span></th>
+            <th scope="col">
+              <div class="th-plan">
+                <span class="th-plan__name">Personal</span>
+                <p class="price-tag" data-price="personal"><strong>Rp —</strong><span>Harga menyusul</span></p>
+                <a href="index.html?paket=personal&amp;produk=nfc-business-card#pesan" class="btn btn--ghost">Pesan Personal</a>
+              </div>
+            </th>
+            <th scope="col" class="is-pop">
+              <div class="th-plan">
+                <span class="th-plan__name">Community <span class="pill">Populer</span></span>
+                <p class="price-tag" data-price="community"><strong>Rp —</strong><span>Harga menyusul</span></p>
+                <a href="index.html?paket=community&amp;produk=kartu-member#pesan" class="btn btn--primary">Pesan Community</a>
+              </div>
+            </th>
+            <th scope="col">
+              <div class="th-plan">
+                <span class="th-plan__name">Access</span>
+                <p class="price-tag" data-price="access"><strong>Custom</strong><span>Sesuai kebutuhan</span></p>
+                <a href="index.html?paket=access&amp;produk=kartu-member#pesan" class="btn btn--ghost">Konsultasi</a>
+              </div>
+            </th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr class="cat"><th colspan="4" scope="colgroup"><span>Kartu dan profil</span></th></tr>
+          <tr><th scope="row">Kartu NFC fisik</th><td><span class="yes" aria-label="Ya"></span></td><td class="is-pop"><span class="yes" aria-label="Ya"></span></td><td><span class="yes" aria-label="Ya"></span></td></tr>
+          <tr><th scope="row">QR cadangan di balik kartu</th><td><span class="yes" aria-label="Ya"></span></td><td class="is-pop"><span class="yes" aria-label="Ya"></span></td><td><span class="yes" aria-label="Ya"></span></td></tr>
+          <tr><th scope="row">Profil dan portofolio online</th><td><span class="yes" aria-label="Ya"></span></td><td class="is-pop"><span class="yes" aria-label="Ya"></span></td><td><span class="yes" aria-label="Ya"></span></td></tr>
+          <tr><th scope="row">Template website</th><td><span class="yes" aria-label="Ya"></span></td><td class="is-pop"><span class="yes" aria-label="Ya"></span></td><td><span class="yes" aria-label="Ya"></span></td></tr>
+          <tr><th scope="row">Ubah isi profil kapan saja</th><td><span class="yes" aria-label="Ya"></span></td><td class="is-pop"><span class="yes" aria-label="Ya"></span></td><td><span class="yes" aria-label="Ya"></span></td></tr>
+          <tr><th scope="row">Desain kartu custom</th><td><span class="yes" aria-label="Ya"></span></td><td class="is-pop"><span class="yes" aria-label="Ya"></span></td><td><span class="yes" aria-label="Ya"></span></td></tr>
+          <tr><th scope="row">Penggantian kartu hilang</th><td><span class="yes" aria-label="Ya"></span></td><td class="is-pop"><span class="yes" aria-label="Ya"></span></td><td><span class="yes" aria-label="Ya"></span></td></tr>
+
+          <tr class="cat"><th colspan="4" scope="colgroup"><span>Komunitas</span></th></tr>
+          <tr><th scope="row">Kartu member bertanda eksklusif</th><td><span class="no" aria-label="Tidak">—</span></td><td class="is-pop"><span class="yes" aria-label="Ya"></span></td><td><span class="yes" aria-label="Ya"></span></td></tr>
+          <tr><th scope="row">Desain mengikuti identitas komunitas</th><td><span class="no" aria-label="Tidak">—</span></td><td class="is-pop"><span class="yes" aria-label="Ya"></span></td><td><span class="yes" aria-label="Ya"></span></td></tr>
+          <tr><th scope="row">Akses khusus sesuai permintaan</th><td><span class="no" aria-label="Tidak">—</span></td><td class="is-pop"><span class="yes" aria-label="Ya"></span></td><td><span class="yes" aria-label="Ya"></span></td></tr>
+          <tr><th scope="row">Daftar anggota lewat spreadsheet</th><td><span class="no" aria-label="Tidak">—</span></td><td class="is-pop"><span class="yes" aria-label="Ya"></span></td><td><span class="yes" aria-label="Ya"></span></td></tr>
+          <tr><th scope="row">Nonaktifkan kartu anggota yang keluar</th><td><span class="no" aria-label="Tidak">—</span></td><td class="is-pop"><span class="yes" aria-label="Ya"></span></td><td><span class="yes" aria-label="Ya"></span></td></tr>
+
+          <tr class="cat"><th colspan="4" scope="colgroup"><span>Layanan</span></th></tr>
+          <tr><th scope="row">Integrasi antar fitur</th><td><span class="no" aria-label="Tidak">—</span></td><td class="is-pop"><span class="no" aria-label="Tidak">—</span></td><td><span class="yes" aria-label="Ya"></span></td></tr>
+          <tr><th scope="row">Pendampingan tim Linkert</th><td><span class="no" aria-label="Tidak">—</span></td><td class="is-pop"><span class="no" aria-label="Tidak">—</span></td><td><span class="yes" aria-label="Ya"></span></td></tr>
+          <tr><th scope="row">Prioritas produksi kartu</th><td><span class="no" aria-label="Tidak">—</span></td><td class="is-pop"><span class="no" aria-label="Tidak">—</span></td><td><span class="yes" aria-label="Ya"></span></td></tr>
+          <tr><th scope="row">Laporan pemakaian kartu</th><td><span class="no" aria-label="Tidak">—</span></td><td class="is-pop"><span class="no" aria-label="Tidak">—</span></td><td><span class="yes" aria-label="Ya"></span></td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="section" id="faq" style="padding-top: 24px;">
+  <div class="container narrow">
+    <div class="section-head center">
+      <p class="eyebrow">FAQ</p>
+      <h2>Pertanyaan yang sering muncul.</h2>
+    </div>
+
+    <div class="faq-group">
+      <p class="faq-group__label">Paket dan pembayaran</p>
+      <div class="faq faq--chev">
+        <div class="faq__item"><button class="faq__q" aria-expanded="false">Berapa harga tiap paket?</button><div class="faq__a"><p>[Jawaban menyusul: harga Personal dan Community belum ditetapkan. Harga Access disesuaikan dengan kebutuhan organisasi.]</p></div></div>
+        <div class="faq__item"><button class="faq__q" aria-expanded="false">Apa beda Personal dan Community?</button><div class="faq__a"><p>Personal untuk kartu pribadi. Community menambahkan kartu member bertanda eksklusif, akses khusus sesuai permintaan komunitas, dan pengelolaan kartu anggota.</p></div></div>
+        <div class="faq__item"><button class="faq__q" aria-expanded="false">Apa yang ditambahkan paket Access?</button><div class="faq__a"><p>Semua fitur Community, ditambah integrasi antar fitur, pendampingan tim Linkert, prioritas produksi, dan laporan pemakaian kartu. [Rincian integrasi menyusul.]</p></div></div>
+        <div class="faq__item"><button class="faq__q" aria-expanded="false">Apakah ada biaya bulanan?</button><div class="faq__a"><p>[Jawaban menyusul: belum diputuskan apakah profil online dikenai biaya berkala.]</p></div></div>
+        <div class="faq__item"><button class="faq__q" aria-expanded="false">Bagaimana cara membayar?</button><div class="faq__a"><p>Setelah formulir pesanan dikirim, tim Linkert menghubungimu lewat WhatsApp untuk detail pembayaran. [Metode pembayaran menyusul.]</p></div></div>
+      </div>
+    </div>
+
+    <div class="faq-group">
+      <p class="faq-group__label">Kartu NFC</p>
+      <div class="faq faq--chev">
+        <div class="faq__item"><button class="faq__q" aria-expanded="false">Kenapa pakai kartu NFC?</button><div class="faq__a"><p>Sekali tap, profil dan portofoliomu terbuka di ponsel lawan bicara. Isinya bisa kamu ubah kapan saja tanpa mencetak ulang kartu.</p></div></div>
+        <div class="faq__item"><button class="faq__q" aria-expanded="false">Apakah kartu bisa dibaca semua ponsel?</button><div class="faq__a"><p>Ponsel dengan NFC cukup di-tap. Ponsel tanpa NFC bisa memindai QR di balik kartu.</p></div></div>
+        <div class="faq__item"><button class="faq__q" aria-expanded="false">Berapa minimal anggota untuk paket Community?</button><div class="faq__a"><p>[Jawaban menyusul: jumlah minimal belum ditetapkan.]</p></div></div>
+        <div class="faq__item"><button class="faq__q" aria-expanded="false">Bisakah kartu anggota yang keluar dipakai ulang?</button><div class="faq__a"><p>Kartu anggota yang keluar bisa dinonaktifkan. [Apakah kartu bisa dipakai ulang untuk anggota baru belum diputuskan.]</p></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- FOOTER (sama di semua halaman) -->
+<footer class="footer" id="footer">
+  <div class="container">
+    <div class="footer__top">
+      <img class="logo" src="img/logo 140x40.png" alt="Logo Linkert" width="111" height="50" />
+      <div class="footer__contact">
+        <span>WhatsApp: (nomor menyusul)</span>
+        <span>Email: (alamat menyusul)</span>
+      </div>
+    </div>
+    <div class="footer__cols">
+      <div>
+        <h4>Produk</h4>
+        <a href="nfc-business-card.html">Kartu NFC Business Card</a>
+        <a href="index.html#community">Kartu Member Komunitas</a>
+        <a href="index.html#promo">Desain Kartu Custom</a>
+        <a href="index.html#promo">Kartu Premium</a>
+      </div>
+      <div>
+        <h4>Sumber</h4>
+        <a href="pricing.html">Pricing</a>
+        <a href="#">Blog</a>
+        <a href="index.html#faq">FAQ</a>
+        <a href="#">Panduan</a>
+      </div>
+      <div>
+        <h4>Perusahaan</h4>
+        <a href="#">Tentang kami</a>
+        <a href="#">Karier</a>
+        <a href="#footer">Hubungi kami</a>
+      </div>
+      <div>
+        <h4>Legal</h4>
+        <a href="#">Kebijakan privasi</a>
+        <a href="#">Syarat layanan</a>
+        <a href="#">Kebijakan pengembalian</a>
+        <a href="#">Kebijakan pengiriman</a>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <span>© <span id="year">2026</span> Linkert</span>
+      <label class="lang"><span class="sr-only">Pilih bahasa</span>
+        <select id="langSelect"><option value="id" selected>Indonesia</option><option value="en">English</option></select>
+      </label>
+      <div class="socials">
+        <a href="#" aria-label="Instagram Linkert">IG</a>
+        <a href="#" aria-label="LinkedIn Linkert">in</a>
+        <a href="#" aria-label="TikTok Linkert">TT</a>
+        <a href="#" aria-label="YouTube Linkert">YT</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+<script src="script.js"></script>
+</body>
+</html>

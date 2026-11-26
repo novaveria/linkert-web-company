@@ -1,0 +1,826 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Kartu NFC Business Card | Linkert</title>
+    <meta
+      name="description"
+      content="Kartu NFC Business Card Linkert. Sekali tap, profil dan portofoliomu terbuka di ponsel lawan bicara."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700;12..96,800&family=Instrument+Sans:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- NAVBAR (sama di semua halaman) -->
+    <header class="nav" id="top">
+      <div class="container nav__inner">
+        <a href="index.html" class="nav__logo" aria-label="Linkert, ke beranda">
+          <img class="logo" src="img/logo 140x40.png" alt="Logo Linkert" width="111" height="50" />
+        </a>
+        <nav class="nav__menu" id="navMenu" aria-label="Menu utama">
+          <a href="index.html" class="nav__link">Solusi</a>
+          <a href="nfc-business-card.html" class="nav__link" aria-current="page"
+            >Produk</a
+          >
+          <a href="pricing.html" class="nav__link">Pricing</a>
+        </nav>
+        <div class="nav__actions">
+          <a href="index.html#pesan" class="btn btn--primary btn--sm">Pesan</a>
+          <button
+            class="burger"
+            id="burger"
+            aria-label="Buka menu"
+            aria-expanded="false"
+            aria-controls="navMenu"
+          >
+            <span></span><span></span><span></span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <div class="container">
+        <nav class="crumbs" aria-label="Breadcrumb">
+          <ol>
+            <li><a href="index.html">Beranda</a></li>
+            <li><a href="index.html#basics">Kartu NFC</a></li>
+            <li aria-current="page">Kartu NFC Business Card</li>
+          </ol>
+        </nav>
+
+        <!-- PRODUK: galeri + info -->
+        <section class="product">
+          <div class="gallery">
+            <div
+              class="gallery__main"
+              tabindex="0"
+              aria-label="Galeri foto produk, gunakan panah kiri dan kanan"
+            >
+              <div class="ph" id="galleryMain">
+                <img
+                  src="img/card_formal_1.jpg"
+                  alt="Foto produk 1"
+                  width="1600"
+                  height="1066"
+                  fetchpriority="high"
+                />
+              </div>
+              <button
+                class="gallery__nav gallery__nav--prev"
+                id="galleryPrev"
+                aria-label="Foto sebelumnya"
+              >
+                <svg viewBox="0 0 16 16"><path d="M10 3L5 8l5 5" /></svg>
+              </button>
+              <button
+                class="gallery__nav gallery__nav--next"
+                id="galleryNext"
+                aria-label="Foto berikutnya"
+              >
+                <svg viewBox="0 0 16 16"><path d="M6 3l5 5-5 5" /></svg>
+              </button>
+            </div>
+            <div class="thumbs" id="thumbs">
+              <button
+                aria-current="true"
+                data-id="IMG-36"
+                data-label="Foto produk 1"
+                data-src="img/card_formal_1.jpg"
+                aria-label="Foto 1"
+              >
+                <div class="ph">
+                  <img src="img/card_formal_1-thumb.jpg" alt="" />
+                </div>
+              </button>
+              <button
+                aria-current="false"
+                data-id="IMG-37"
+                data-label="Foto produk 2"
+                data-src="img/card_formal_2.jpg"
+                aria-label="Foto 2"
+              >
+                <div class="ph">
+                  <img src="img/card_formal_2-thumb.jpg" alt="" />
+                </div>
+              </button>
+              <button
+                aria-current="false"
+                data-id="IMG-38"
+                data-label="Foto produk 3"
+                data-src="img/card_formal_4.jpg"
+                aria-label="Foto 3"
+              >
+                <div class="ph">
+                  <img src="img/card_formal_4-thumb.jpg" alt="" />
+                </div>
+              </button>
+              <button
+                aria-current="false"
+                data-id="IMG-39"
+                data-label="Foto produk 4"
+                data-src="img/carad_formal_3.jpg"
+                aria-label="Foto 4"
+              >
+                <div class="ph">
+                  <img src="img/carad_formal_3-thumb.jpg" alt="" />
+                </div>
+              </button>
+              <button
+                aria-current="false"
+                data-id="IMG-40"
+                data-label="Foto produk 5"
+                data-src="img/card2.jpg"
+                aria-label="Foto 5"
+              >
+                <div class="ph">
+                  <img src="img/card2-thumb.jpg" alt="" />
+                </div>
+              </button>
+              <button
+                aria-current="false"
+                data-id="IMG-41"
+                data-label="Foto produk 6"
+                data-src="img/card3.jpg"
+                aria-label="Foto 6"
+              >
+                <div class="ph">
+                  <img src="img/card3-thumb.jpg" alt="" />
+                </div>
+              </button>
+            </div>
+          </div>
+
+          <div class="pinfo">
+            <h1>Kartu NFC Business Card Linkert</h1>
+            <a href="#ulasan" class="rating"
+              ><span class="stars" aria-hidden="true">★★★★★</span
+              ><span>Belum ada ulasan</span></a
+            >
+            <p class="pprice" data-price="nfc-business-card">
+              <strong>Rp —</strong><span>Harga menyusul</span>
+            </p>
+            <p class="pnote">Ongkos kirim dihitung saat pemesanan.</p>
+
+            <div class="opt-group">
+              <p class="opt-label">Warna: <span id="colorName">Hitam</span></p>
+              <div
+                class="swatches"
+                role="radiogroup"
+                aria-label="Pilih warna kartu"
+              >
+                <button
+                  type="button"
+                  class="swatch"
+                  role="radio"
+                  aria-checked="false"
+                  data-name="Putih"
+                  aria-label="Putih"
+                  style="--c: #f7f7f4"
+                ></button>
+                <button
+                  type="button"
+                  class="swatch"
+                  role="radio"
+                  aria-checked="true"
+                  data-name="Hitam"
+                  aria-label="Hitam"
+                  style="--c: #14161a"
+                ></button>
+                <button
+                  type="button"
+                  class="swatch"
+                  role="radio"
+                  aria-checked="false"
+                  data-name="Biru"
+                  aria-label="Biru"
+                  style="--c: #1f4fd8"
+                ></button>
+                <button
+                  type="button"
+                  class="swatch"
+                  role="radio"
+                  aria-checked="false"
+                  data-name="Kuning"
+                  aria-label="Kuning"
+                  style="--c: #f2b705"
+                ></button>
+                <button
+                  type="button"
+                  class="swatch swatch--custom"
+                  role="radio"
+                  aria-checked="false"
+                  data-name="Desain custom"
+                  aria-label="Desain custom"
+                ></button>
+              </div>
+            </div>
+
+            <div class="opt-group">
+              <p class="opt-label" id="qtyLabel">Jumlah</p>
+              <div class="stepper">
+                <button
+                  type="button"
+                  data-step="-1"
+                  aria-label="Kurangi jumlah"
+                >
+                  −
+                </button>
+                <input
+                  id="qty"
+                  type="number"
+                  min="1"
+                  max="999"
+                  value="1"
+                  inputmode="numeric"
+                  aria-labelledby="qtyLabel"
+                />
+                <button type="button" data-step="1" aria-label="Tambah jumlah">
+                  +
+                </button>
+              </div>
+            </div>
+
+            <ul class="pfeats">
+              <li>
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path
+                    d="M7.5 15.5a3.5 3.5 0 1 1 0-7c2.5 0 6.5 7 9 7a3.5 3.5 0 1 0 0-7c-2.5 0-6.5 7-9 7z"
+                  /></svg
+                >Bisa di-tap berulang kali
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <rect x="7" y="2.5" width="10" height="19" rx="2.5" />
+                  <path d="M11 18.5h2" /></svg
+                >iPhone dan Android dengan NFC
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <rect x="4" y="4" width="6" height="6" rx="1" />
+                  <rect x="14" y="4" width="6" height="6" rx="1" />
+                  <rect x="4" y="14" width="6" height="6" rx="1" />
+                  <path d="M14 14h2v2h-2zM18 18h2v2h-2zM14 18h2M18 14h2" /></svg
+                >QR cadangan di balik kartu
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M12 3l7 3v5c0 4.5-3 8-7 10-4-2-7-5.5-7-10V6z" />
+                  <path d="M9 12l2 2 4-4" /></svg
+                >Kartu hilang bisa dinonaktifkan
+              </li>
+              <li class="stock">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <circle cx="12" cy="12" r="4" /></svg
+                >[Status stok menyusul]
+              </li>
+            </ul>
+
+            <a
+              href="index.html#pesan"
+              class="btn btn--primary btn--block btn--lg btn--pill"
+              id="orderNow"
+              data-product="nfc-business-card"
+              >Pesan</a
+            >
+          </div>
+        </section>
+
+        <!-- DETAIL PRODUK (akordeon) -->
+        <section class="pacc faq--chev" aria-label="Detail produk">
+          <div class="faq__item">
+            <button class="faq__q" aria-expanded="false">Deskripsi</button>
+            <div class="faq__a">
+              <div>
+                <p>
+                  Kartu fisik dengan chip NFC yang menyimpan tautan ke profil
+                  online-mu. Tap kartu ke ponsel lawan bicara, dan profilmu yang
+                  berisi identitas, portofolio, serta tautan sosial langsung
+                  terbuka di browser.
+                </p>
+                <p>
+                  Di bagian belakang kartu ada QR untuk ponsel yang tidak punya
+                  NFC.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="faq__item">
+            <button class="faq__q" aria-expanded="false">
+              Informasi pengiriman
+            </button>
+            <div class="faq__a">
+              <div>
+                <p>
+                  [Menyusul: area pengiriman, kurir, dan perkiraan waktu
+                  sampai.]
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="faq__item">
+            <button class="faq__q" aria-expanded="false">
+              Apa saja yang bisa ditampilkan di profil?
+            </button>
+            <div class="faq__a">
+              <div>
+                <ol>
+                  <li>Nama, foto, dan jabatan.</li>
+                  <li>Portofolio dan karya.</li>
+                  <li>Tautan media sosial.</li>
+                  <li>Kontak WhatsApp, email, dan telepon.</li>
+                  <li>Tampilan dari template website pilihanmu.</li>
+                </ol>
+              </div>
+            </div>
+          </div>
+          <div class="faq__item">
+            <button class="faq__q" aria-expanded="false">
+              Apakah perlu berlangganan?
+            </button>
+            <div class="faq__a">
+              <div>
+                <p>
+                  [Menyusul: belum diputuskan apakah profil online dikenai biaya
+                  berkala.]
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="faq__item">
+            <button class="faq__q" aria-expanded="false">
+              Pesanan untuk komunitas
+            </button>
+            <div class="faq__a">
+              <div>
+                <p>
+                  Untuk kartu member seluruh anggota komunitas, pilih paket
+                  Community.
+                  <a href="pricing.html" class="link">Lihat Pricing</a>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="faq__item">
+            <button class="faq__q" aria-expanded="false">
+              Kebijakan pengembalian
+            </button>
+            <div class="faq__a">
+              <div><p>[Menyusul: syarat dan batas waktu pengembalian.]</p></div>
+            </div>
+          </div>
+          <div class="faq__item">
+            <button class="faq__q" aria-expanded="false">
+              Kartu hilang atau rusak
+            </button>
+            <div class="faq__a">
+              <div>
+                <p>
+                  Lapor ke tim Linkert. Tautan lama dinonaktifkan, lalu kartu
+                  pengganti dibuat dengan tautan baru. [Biaya penggantian
+                  menyusul.]
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <!-- VIDEO -->
+      <!-- <section class="section">
+        <div class="container center">
+          <h2>Lihat kartu Linkert dipakai.</h2>
+          <p class="lead">
+            Tonton cara membagikan kontak dan portofolio dengan sekali tap.
+          </p>
+          <button
+            class="video js-video"
+            aria-label="Putar video, belum tersedia"
+          >
+            <div class="ph ph--video">
+              <span>IMG-42</span><small>Poster video 1280 × 720</small>
+            </div>
+            <span class="video__play" aria-hidden="true"
+              ><svg viewBox="0 0 24 24"><path d="M8 5.5v13l10.5-6.5z" /></svg
+            ></span>
+          </button>
+        </div>
+      </section> -->
+
+      <!-- ULASAN (CONFIG.showReviews di script.js; isi hanya dengan ulasan asli) -->
+      <!-- <section class="section section--tint" id="ulasan">
+        <div class="container">
+          <div class="reviews-head">
+            <span class="rating"
+              ><span class="stars" aria-hidden="true">★★★★★</span
+              ><span>0 ulasan</span></span
+            >
+            <a href="#" class="link">Urutkan</a>
+          </div>
+          <div class="masonry">
+            <article class="rcard">
+              <div class="ph" style="aspect-ratio: 4/5">
+                <span>IMG-43</span><small>Foto ulasan</small>
+              </div>
+              <div class="rcard__body">
+                <strong>[Nama]</strong><small>[Tanggal]</small
+                ><span class="stars" aria-hidden="true">★★★★★</span>
+                <p>[Ulasan asli dari pembeli]</p>
+                <div class="rcard__prod">
+                  <div class="ph"><span>.</span></div>
+                  Kartu NFC Business Card
+                </div>
+              </div>
+            </article>
+            <article class="rcard">
+              <div class="rcard__body">
+                <strong>[Nama]</strong><small>[Tanggal]</small
+                ><span class="stars" aria-hidden="true">★★★★★</span>
+                <p>
+                  [Ulasan asli dari pembeli, versi yang lebih panjang untuk
+                  menguji tinggi kartu ulasan di grid]
+                </p>
+                <div class="rcard__prod">
+                  <div class="ph"><span>.</span></div>
+                  Kartu NFC Business Card
+                </div>
+              </div>
+            </article>
+            <article class="rcard">
+              <div class="ph" style="aspect-ratio: 1">
+                <span>IMG-43</span><small>Foto ulasan</small>
+              </div>
+              <div class="rcard__body">
+                <strong>[Nama]</strong><small>[Tanggal]</small
+                ><span class="stars" aria-hidden="true">★★★★★</span>
+                <p>[Ulasan asli dari pembeli]</p>
+                <div class="rcard__prod">
+                  <div class="ph"><span>.</span></div>
+                  Kartu NFC Business Card
+                </div>
+              </div>
+            </article>
+            <article class="rcard">
+              <div class="ph" style="aspect-ratio: 3/4">
+                <span>IMG-43</span><small>Foto ulasan</small>
+              </div>
+              <div class="rcard__body">
+                <strong>[Nama]</strong><small>[Tanggal]</small
+                ><span class="stars" aria-hidden="true">★★★★★</span>
+                <p>[Ulasan asli dari pembeli]</p>
+                <div class="rcard__prod">
+                  <div class="ph"><span>.</span></div>
+                  Kartu Member Komunitas
+                </div>
+              </div>
+            </article>
+            <article class="rcard">
+              <div class="ph" style="aspect-ratio: 4/5">
+                <span>IMG-43</span><small>Foto ulasan</small>
+              </div>
+              <div class="rcard__body">
+                <strong>[Nama]</strong><small>[Tanggal]</small
+                ><span class="stars" aria-hidden="true">★★★★★</span>
+                <p>[Ulasan asli dari pembeli]</p>
+                <div class="rcard__prod">
+                  <div class="ph"><span>.</span></div>
+                  Kartu NFC Business Card
+                </div>
+              </div>
+            </article>
+            <article class="rcard">
+              <div class="ph" style="aspect-ratio: 1">
+                <span>IMG-43</span><small>Foto ulasan</small>
+              </div>
+              <div class="rcard__body">
+                <strong>[Nama]</strong><small>[Tanggal]</small
+                ><span class="stars" aria-hidden="true">★★★★★</span>
+                <p>[Ulasan asli dari pembeli]</p>
+                <div class="rcard__prod">
+                  <div class="ph"><span>.</span></div>
+                  Kartu NFC Business Card
+                </div>
+              </div>
+            </article>
+            <article class="rcard">
+              <div class="rcard__body">
+                <strong>[Nama]</strong><small>[Tanggal]</small
+                ><span class="stars" aria-hidden="true">★★★★★</span>
+                <p>[Ulasan asli dari pembeli]</p>
+                <div class="rcard__prod">
+                  <div class="ph"><span>.</span></div>
+                  Desain Kartu Custom
+                </div>
+              </div>
+            </article>
+            <article class="rcard">
+              <div class="ph" style="aspect-ratio: 3/4">
+                <span>IMG-43</span><small>Foto ulasan</small>
+              </div>
+              <div class="rcard__body">
+                <strong>[Nama]</strong><small>[Tanggal]</small
+                ><span class="stars" aria-hidden="true">★★★★★</span>
+                <p>[Ulasan asli dari pembeli]</p>
+                <div class="rcard__prod">
+                  <div class="ph"><span>.</span></div>
+                  Kartu NFC Business Card
+                </div>
+              </div>
+            </article>
+            <article class="rcard">
+              <div class="ph" style="aspect-ratio: 4/5">
+                <span>IMG-43</span><small>Foto ulasan</small>
+              </div>
+              <div class="rcard__body">
+                <strong>[Nama]</strong><small>[Tanggal]</small
+                ><span class="stars" aria-hidden="true">★★★★★</span>
+                <p>[Ulasan asli dari pembeli]</p>
+                <div class="rcard__prod">
+                  <div class="ph"><span>.</span></div>
+                  Kartu NFC Business Card
+                </div>
+              </div>
+            </article>
+            <article class="rcard">
+              <div class="ph" style="aspect-ratio: 1">
+                <span>IMG-43</span><small>Foto ulasan</small>
+              </div>
+              <div class="rcard__body">
+                <strong>[Nama]</strong><small>[Tanggal]</small
+                ><span class="stars" aria-hidden="true">★★★★★</span>
+                <p>[Ulasan asli dari pembeli]</p>
+                <div class="rcard__prod">
+                  <div class="ph"><span>.</span></div>
+                  Kartu Member Komunitas
+                </div>
+              </div>
+            </article>
+          </div>
+          <div class="more">
+            <a href="#" class="btn btn--ghost btn--sm"
+              >Tampilkan lebih banyak ulasan</a
+            >
+          </div>
+        </div>
+      </section> -->
+
+      <!-- CARA KERJA + STATISTIK -->
+      <section class="section">
+        <div class="container center">
+          <h2>Cara kerjanya.</h2>
+          <p class="lead">
+            Pilih kartu, buat profil, lalu tap untuk berbagi. Tim Linkert
+            membantu di setiap langkah, jadi kamu tidak perlu paham teknis.
+          </p>
+
+          <div class="how">
+            <div class="how__item">
+              <span class="how__num">1</span>
+              <div class="ph"><img class="fill" src="img/gen/how-pick.svg" alt="Pilihan warna kartu" loading="lazy" decoding="async" /></div>
+              <h3>Pilih kartumu</h3>
+              <p>
+                Pilih warna atau minta desain custom yang paling cocok denganmu.
+              </p>
+            </div>
+            <div class="how__item">
+              <span class="how__num">2</span>
+              <div class="ph"><img class="fill" src="img/gen/step-profile.svg" alt="Profil di ponsel dan pilihan template" loading="lazy" decoding="async" /></div>
+              <h3>Buat profilmu</h3>
+              <p>Isi identitas dan portofolio, lalu pilih template website.</p>
+            </div>
+            <div class="how__item">
+              <span class="how__num">3</span>
+              <div class="ph"><img class="fill" src="img/gen/step-tap.svg" alt="Kartu di-tap ke ponsel dan profil terbuka" loading="lazy" decoding="async" /></div>
+              <h3>Tap dan bagikan</h3>
+              <p>
+                Dekatkan kartu ke ponsel lawan bicara, profilmu langsung
+                terbuka.
+              </p>
+            </div>
+          </div>
+
+          <div class="pstats">
+            <div class="pstat">
+              <strong>Satu kartu</strong><small>dipakai berulang kali</small>
+              <div class="pstat__icon">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path
+                    d="M7.5 15.5a3.5 3.5 0 1 1 0-7c2.5 0 6.5 7 9 7a3.5 3.5 0 1 0 0-7c-2.5 0-6.5 7-9 7z"
+                  />
+                </svg>
+              </div>
+            </div>
+            <div class="pstat">
+              <strong>Mudah dipakai</strong><small>tanpa aplikasi</small>
+              <div class="pstat__icon">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M5 12.5l4.5 4.5L19 7.5" />
+                </svg>
+              </div>
+            </div>
+            <div class="pstat">
+              <strong>Kompatibel</strong><small>iPhone dan Android</small>
+              <div class="pstat__icon">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <rect x="7" y="2.5" width="10" height="19" rx="2.5" />
+                  <path d="M11 18.5h2" />
+                </svg>
+              </div>
+            </div>
+            <div class="pstat">
+              <strong>Desain custom</strong><small>sesuai gayamu</small>
+              <div class="pstat__icon">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M4 20l4-1 10.5-10.5a2.1 2.1 0 0 0-3-3L5 16z" />
+                  <path d="M14 7l3 3" />
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- FITUR 3x3 -->
+      <!-- <section class="section section--tint">
+        <div class="container">
+          <div class="section-head center">
+            <h2>Fitur Kartu NFC Business Card Linkert</h2>
+            <p class="lead">
+              Setiap kartu terhubung ke profil online yang bisa kamu ubah kapan
+              saja.
+            </p>
+          </div>
+          <div class="fgrid">
+            <article class="fcard">
+              <div class="ph"><span>IMG-47</span><small>480 × 360</small></div>
+              <h3>Tap untuk berbagi</h3>
+              <p>
+                Dekatkan kartu ke ponsel, kontak dan profilmu langsung terbuka
+                tanpa aplikasi.
+              </p>
+            </article>
+            <article class="fcard">
+              <div class="ph"><span>IMG-48</span><small>480 × 360</small></div>
+              <h3>Pengaturan dibantu tim</h3>
+              <p>
+                Tim Linkert menyiapkan kartu dan profilmu. Kamu tinggal mengisi
+                data.
+              </p>
+            </article>
+            <article class="fcard">
+              <div class="ph"><span>IMG-49</span><small>480 × 360</small></div>
+              <h3>Berbagi tanpa batas</h3>
+              <p>
+                Satu kartu bisa di-tap ke sebanyak mungkin orang, tanpa habis
+                seperti kartu kertas.
+              </p>
+            </article>
+            <article class="fcard">
+              <div class="ph"><span>IMG-50</span><small>480 × 360</small></div>
+              <h3>Selalu terbaru</h3>
+              <p>
+                Ganti pekerjaan atau portofolio? Ubah profil sekali, semua
+                penerima melihat versi terbaru.
+              </p>
+            </article>
+            <article class="fcard">
+              <div class="ph"><span>IMG-51</span><small>480 × 360</small></div>
+              <h3>QR cadangan</h3>
+              <p>
+                Ponsel tanpa NFC tetap bisa membuka profilmu lewat QR di balik
+                kartu.
+              </p>
+            </article>
+            <article class="fcard">
+              <div class="ph"><span>IMG-52</span><small>480 × 360</small></div>
+              <h3>Desain kartu custom</h3>
+              <p>Pilih warna yang tersedia atau minta desain sesuai gayamu.</p>
+            </article>
+            <article class="fcard">
+              <div class="ph"><span>IMG-53</span><small>480 × 360</small></div>
+              <h3>iPhone dan Android</h3>
+              <p>
+                Bisa dibaca ponsel yang punya fitur NFC, baik iPhone maupun
+                Android.
+              </p>
+            </article>
+            <article class="fcard">
+              <div class="ph"><span>IMG-54</span><small>480 × 360</small></div>
+              <h3>Portofolio di profil</h3>
+              <p>
+                Tampilkan karya terbaikmu, bukan hanya nama dan nomor telepon.
+              </p>
+            </article>
+            <article class="fcard">
+              <div class="ph"><span>IMG-55</span><small>480 × 360</small></div>
+              <h3>Kartu hilang tetap aman</h3>
+              <p>
+                Lapor ke tim, tautan lama dinonaktifkan dan kartu baru dibuat.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section> -->
+
+      <!-- PRODUK TERKAIT -->
+      <!-- <section class="section">
+        <div class="container">
+          <div class="section-head"><h2>Produk lainnya</h2></div>
+          <div class="related">
+            <a href="index.html#community" class="rel"
+              ><div class="ph"><span>IMG-56</span><small>600 × 600</small></div>
+              <strong>Kartu Member Komunitas</strong>
+              <p data-price="kartu-member">
+                <strong>Rp —</strong><span>Harga menyusul</span>
+              </p></a
+            >
+            <a href="index.html#promo" class="rel"
+              ><div class="ph"><span>IMG-57</span><small>600 × 600</small></div>
+              <strong>Desain Kartu Custom</strong>
+              <p data-price="desain-custom">
+                <strong>Rp —</strong><span>Harga menyusul</span>
+              </p></a
+            >
+            <a href="index.html#promo" class="rel"
+              ><div class="ph"><span>IMG-58</span><small>600 × 600</small></div>
+              <strong>Kartu Premium Cetak Laser</strong>
+              <p><span>Segera hadir</span></p></a
+            >
+            <a href="index.html#promo" class="rel"
+              ><div class="ph"><span>IMG-59</span><small>600 × 600</small></div>
+              <strong>Kartu Bentuk Custom</strong>
+              <p><span>Segera hadir</span></p></a
+            >
+          </div>
+        </div>
+      </section> -->
+    </main>
+
+    <!-- FOOTER (sama di semua halaman) -->
+    <footer class="footer" id="footer">
+      <div class="container">
+        <div class="footer__top">
+          <img class="logo" src="img/logo 140x40.png" alt="Logo Linkert" width="111" height="50" />
+          <div class="footer__contact">
+            <span>WhatsApp: +6282317674504</span>
+            <span>Email: rozzan.ramadhani@gmail.com</span>
+          </div>
+        </div>
+        <div class="footer__cols">
+          <div>
+            <h4>Produk</h4>
+            <a href="nfc-business-card.html">Kartu NFC Business Card</a>
+            <a href="index.html#community">Kartu Member Komunitas</a>
+            <a href="index.html#promo">Desain Kartu Custom</a>
+            <a href="index.html#promo">Kartu Premium</a>
+          </div>
+          <div>
+            <h4>Sumber</h4>
+            <a href="pricing.html">Pricing</a>
+            <a href="#">Blog</a>
+            <a href="index.html#faq">FAQ</a>
+            <a href="#">Panduan</a>
+          </div>
+          <div>
+            <h4>Perusahaan</h4>
+            <a href="#">Tentang kami</a>
+            <a href="#">Karier</a>
+            <a href="#footer">Hubungi kami</a>
+          </div>
+          <div>
+            <h4>Legal</h4>
+            <a href="#">Kebijakan privasi</a>
+            <a href="#">Syarat layanan</a>
+            <a href="#">Kebijakan pengembalian</a>
+            <a href="#">Kebijakan pengiriman</a>
+          </div>
+        </div>
+        <div class="footer__bottom">
+          <span>© <span id="year">2026</span> Linkert</span>
+          <label class="lang"
+            ><span class="sr-only">Pilih bahasa</span>
+            <select id="langSelect">
+              <option value="id" selected>Indonesia</option>
+              <option value="en">English</option>
+            </select>
+          </label>
+          <div class="socials">
+            <a href="#" aria-label="Instagram Linkert">IG</a>
+            <a href="#" aria-label="LinkedIn Linkert">in</a>
+            <a href="#" aria-label="TikTok Linkert">TT</a>
+            <a href="#" aria-label="YouTube Linkert">YT</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+    <script src="script.js"></script>
+  </body>
+</html>

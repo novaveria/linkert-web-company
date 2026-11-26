@@ -1,0 +1,1331 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Linkert | Kartu NFC untuk Profil dan Komunitas</title>
+    <meta
+      name="description"
+      content="Kartu NFC untuk mahasiswa, fresh graduate, profesional, dan komunitas. Sekali tap, profil dan portofoliomu terbuka di ponsel lawan bicara."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700;12..96,800&family=Instrument+Sans:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mockups.css" />
+  </head>
+  <body>
+    <!-- =========================================================
+     1. NAVBAR
+     ========================================================= -->
+    <header class="nav" id="top">
+      <div class="container nav__inner">
+        <a href="#top" class="nav__logo" aria-label="Linkert, kembali ke atas">
+          <img
+            class="logo"
+            src="img/logo 140x40.png"
+            alt="Logo Linkert"
+            width="111"
+            height="50"
+          />
+        </a>
+
+        <nav class="nav__menu" id="navMenu" aria-label="Menu utama">
+          <a href="#paket" class="nav__link">Solusi</a>
+          <a href="nfc-business-card.html" class="nav__link">Produk</a>
+          <a href="pricing.html" class="nav__link">Pricing</a>
+        </nav>
+
+        <div class="nav__actions">
+          <a href="#pesan" class="btn btn--primary btn--sm">Pesan</a>
+          <button
+            class="burger"
+            id="burger"
+            aria-label="Buka menu"
+            aria-expanded="false"
+            aria-controls="navMenu"
+          >
+            <span></span><span></span><span></span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <!-- =========================================================
+     2. HERO
+     ========================================================= -->
+      <section class="hero">
+        <div class="container hero__grid">
+          <div class="hero__copy">
+            <h1>Sekali tap, profilmu terbuka di ponsel mereka.</h1>
+            <p class="lead">
+              Kartu NFC untuk mahasiswa, fresh graduate, dan profesional. Tanpa
+              aplikasi, tanpa mengetik nomor.
+            </p>
+            <div class="btn-row">
+              <a href="#pesan" class="btn btn--primary">Pesan kartu</a>
+              <a href="#community" class="btn btn--ghost">Untuk komunitas</a>
+            </div>
+          </div>
+
+          <div class="mosaic" aria-label="Contoh kartu profil">
+            <div class="mosaic__col">
+              <article class="pcard">
+                <div class="ph ph--photo">
+                  <img
+                    class="fill"
+                    src="img/gen/avatar-alya.svg"
+                    alt=""
+                    loading="lazy"
+                    decoding="async"
+                  />
+                </div>
+                <div class="pcard__body">
+                  <strong>Arya Rahman</strong><span>Designer</span
+                  ><button class="btn btn--primary btn--xs js-save">
+                    Simpan kontak
+                  </button>
+                </div>
+              </article>
+              <article class="pcard">
+                <div class="ph ph--photo">
+                  <img
+                    class="fill"
+                    src="img/gen/avatar-dimas.svg"
+                    alt=""
+                    loading="lazy"
+                    decoding="async"
+                  />
+                </div>
+                <div class="pcard__body">
+                  <strong>Dimas Pratama</strong
+                  ><span>Programmer</span
+                  ><button class="btn btn--primary btn--xs js-save">
+                    Simpan kontak
+                  </button>
+                </div>
+              </article>
+            </div>
+            <div class="mosaic__col mosaic__col--shift">
+              <article class="pcard">
+                <div class="ph ph--photo">
+                  <img
+                    class="fill"
+                    src="img/gen/avatar-nadia.svg"
+                    alt=""
+                    loading="lazy"
+                    decoding="async"
+                  />
+                </div>
+                <div class="pcard__body">
+                  <strong>Naufal Putra</strong><span>Finance</span
+                  ><button class="btn btn--primary btn--xs js-save">
+                    Simpan kontak
+                  </button>
+                </div>
+              </article>
+              <article class="pcard">
+                <div class="ph ph--photo">
+                  <img
+                    class="fill"
+                    src="img/gen/avatar-raka.svg"
+                    alt=""
+                    loading="lazy"
+                    decoding="async"
+                  />
+                </div>
+                <div class="pcard__body">
+                  <strong>Raka Aditya</strong><span>Marketing</span
+                  ><button class="btn btn--primary btn--xs js-save">
+                    Simpan kontak
+                  </button>
+                </div>
+              </article>
+            </div>
+            <div class="mosaic__col">
+              <article class="pcard">
+                <div class="ph ph--photo">
+                  <img
+                    class="fill"
+                    src="img/gen/avatar-sekar.svg"
+                    alt=""
+                    loading="lazy"
+                    decoding="async"
+                  />
+                </div>
+                <div class="pcard__body">
+                  <strong>Satria Wibowo</strong><span>Sales</span
+                  ><button class="btn btn--primary btn--xs js-save">
+                    Simpan kontak
+                  </button>
+                </div>
+              </article>
+              <article class="pcard">
+                <div class="ph ph--photo">
+                  <img
+                    class="fill"
+                    src="img/gen/avatar-bima.svg"
+                    alt=""
+                    loading="lazy"
+                    decoding="async"
+                  />
+                </div>
+                <div class="pcard__body">
+                  <strong>Bima Santoso</strong><span>Consulting</span
+                  ><button class="btn btn--primary btn--xs js-save">
+                    Simpan kontak
+                  </button>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- =========================================================
+     3. STRIP LOGO (sembunyikan lewat CONFIG.showPartners di script.js
+        sampai ada mitra yang memberi izin logonya dipakai)
+     ========================================================= -->
+      <section class="logos" id="partners" aria-label="Mitra komunitas">
+        <p class="logos__caption">
+          Dipakai oleh komunitas dan organisasi mahasiswa
+        </p>
+        <div class="marquee">
+          <div class="marquee__track" id="marqueeTrack">
+            <div class="ph ph--logo-sm">
+              <span>IMG-08</span><small>Logo 1</small>
+            </div>
+            <div class="ph ph--logo-sm">
+              <span>IMG-08</span><small>Logo 2</small>
+            </div>
+            <div class="ph ph--logo-sm">
+              <span>IMG-08</span><small>Logo 3</small>
+            </div>
+            <div class="ph ph--logo-sm">
+              <span>IMG-08</span><small>Logo 4</small>
+            </div>
+            <div class="ph ph--logo-sm">
+              <span>IMG-08</span><small>Logo 5</small>
+            </div>
+            <div class="ph ph--logo-sm">
+              <span>IMG-08</span><small>Logo 6</small>
+            </div>
+            <div class="ph ph--logo-sm">
+              <span>IMG-08</span><small>Logo 7</small>
+            </div>
+            <div class="ph ph--logo-sm">
+              <span>IMG-08</span><small>Logo 8</small>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- =========================================================
+     5. APA ITU KARTU LINKERT
+     ========================================================= -->
+      <section class="section section--tint" id="basics">
+        <div class="container center narrow">
+          <p class="eyebrow">Dasar-dasarnya</p>
+          <h2>Apa itu kartu NFC Linkert?</h2>
+          <p class="lead">
+            Kartu fisik dengan chip NFC yang menyimpan tautan ke halaman
+            profilmu. Isi halaman bisa diubah kapan saja tanpa mencetak ulang
+            kartu. Baca juga <a href="#" class="link">cara kerja NFC</a>.
+          </p>
+
+          <div class="phone phone--center">
+            <div class="phone__screen">
+              <div class="ph ph--avatar">
+                <img
+                  class="fill"
+                  src="img/gen/avatar-you.svg"
+                  alt=""
+                  loading="lazy"
+                  decoding="async"
+                />
+              </div>
+              <strong class="phone__name">Nama Kamu</strong>
+              <span class="phone__role">Mahasiswa, Bisnis Kreatif</span>
+              <div class="chips">
+                <span class="chip">Instagram</span>
+                <span class="chip">LinkedIn</span>
+                <span class="chip">TikTok</span>
+              </div>
+              <button class="btn btn--primary btn--block js-save">
+                Simpan kontak
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- =========================================================
+     6. TIGA KEUNGGULAN
+     ========================================================= -->
+      <section class="section">
+        <div class="container split">
+          <div>
+            <h2>Kenalan jadi lebih cepat.</h2>
+            <ol class="benefits">
+              <li>
+                <span
+                  ><strong>Tanpa aplikasi.</strong> Penerima cukup membuka
+                  profilmu di browser.</span
+                >
+              </li>
+              <li>
+                <span
+                  ><strong>Bisa tap atau scan.</strong> NFC untuk ponsel yang
+                  mendukung, QR untuk yang tidak.</span
+                >
+              </li>
+              <li>
+                <span
+                  ><strong>Selalu terbaru.</strong> Ubah profil sekali, semua
+                  yang pernah menerima kartumu melihat versi terbaru.</span
+                >
+              </li>
+            </ol>
+          </div>
+          <div class="tap-stage">
+            <span class="ripple" aria-hidden="true"></span>
+            <span class="ripple ripple--2" aria-hidden="true"></span>
+            <!-- IMG-11: dibuat oleh mockups.js -->
+            <div class="mk-solo" data-mockup="qr-phone"></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- =========================================================
+     7. GRID FITUR (5 blok, teks-visual bergantian)
+     ========================================================= -->
+      <section class="section section--tint" id="fitur">
+        <div class="container">
+          <div class="section-head">
+            <h2>Satu kartu, banyak yang bisa dilakukan.</h2>
+          </div>
+
+          <div class="features">
+            <article class="feature">
+              <div class="feature__text">
+                <h3>Kartu dan website sesuai seleramu</h3>
+                <p>
+                  Pilih desain kartu dan template website, lalu atur warna serta
+                  susunannya sampai terasa seperti milikmu.
+                </p>
+              </div>
+              <div class="ph ph--feature">
+                <img
+                  src="img/mockup_screen.png"
+                  alt="IMG-12"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </div>
+            </article>
+
+            <article class="feature">
+              <div class="feature__text">
+                <h3>Profil dan portofolio di satu halaman</h3>
+                <p>
+                  Identitas, karya, dan semua tautan sosialmu tersusun rapi
+                  dalam satu profil yang mudah dibuka.
+                </p>
+              </div>
+              <!-- IMG-13: dibuat oleh mockups.js -->
+              <div class="mk" data-mockup="profile"></div>
+            </article>
+
+            <article class="feature">
+              <div class="feature__text">
+                <h3>Kartu hilang tetap aman</h3>
+                <p>
+                  Lapor ke tim Linkert. Tautan lama langsung dinonaktifkan dan
+                  kartu baru dikirim ke kamu.
+                </p>
+                <ol class="flow">
+                  <li>Lapor</li>
+                  <li>Tautan lama nonaktif</li>
+                  <li>Kartu baru dikirim</li>
+                </ol>
+              </div>
+              <!-- IMG-14: dibuat oleh mockups.js -->
+              <div class="mk" data-mockup="lost-flow"></div>
+            </article>
+
+            <article class="feature">
+              <div class="feature__text">
+                <h3>QR cadangan di balik kartu</h3>
+                <p>
+                  Ponsel tanpa NFC tetap bisa membuka profilmu dengan memindai
+                  QR di bagian belakang kartu.
+                </p>
+              </div>
+              <div class="ph ph--feature">
+                <img
+                  src="img/mockup_blkgn _linkert 1.png"
+                  alt="IMG-15"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </div>
+            </article>
+
+            <article class="feature">
+              <div class="feature__text">
+                <h3>Satu kartu, semua tautanmu</h3>
+                <p>
+                  Hubungkan media sosial, platform portofolio, dan kontak dalam
+                  satu tempat.
+                </p>
+              </div>
+              <div class="tiles">
+                <p class="tiles__label">Media sosial</p>
+                <div class="tiles__row">
+                  <span>Instagram</span><span>LinkedIn</span><span>TikTok</span
+                  ><span>YouTube</span><span>X</span>
+                </div>
+                <p class="tiles__label">Portofolio</p>
+                <div class="tiles__row">
+                  <span>Behance</span><span>Dribbble</span><span>GitHub</span
+                  ><span>Google Drive</span><span>Medium</span>
+                </div>
+                <p class="tiles__label">Kontak</p>
+                <div class="tiles__row">
+                  <span>WhatsApp</span><span>Email</span><span>Telepon</span
+                  ><span>Website</span>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- =========================================================
+     8. EMPAT CARA PAKAI KARTU
+     ========================================================= -->
+      <section class="section">
+        <div class="container">
+          <div class="section-head">
+            <h2>Empat cara membagikan profilmu.</h2>
+          </div>
+          <div class="grid-4">
+            <article class="way">
+              <div class="ph ph--way">
+                <img
+                  src="img/tap_nfc.jpg"
+                  loading="lazy"
+                  decoding="async"
+                  alt="IMG-17"
+                />
+              </div>
+              <h3>Tap NFC</h3>
+              <p>Dekatkan kartu ke ponsel, profilmu langsung terbuka.</p>
+              <a href="#" class="link">Cara tap kartu</a>
+            </article>
+            <article class="way">
+              <div class="ph ph--way">
+                <img
+                  src="img/person-scanning-qr-code 1.png"
+                  alt="IMG-18"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </div>
+              <h3>Scan QR</h3>
+              <p>Untuk ponsel tanpa NFC, cukup arahkan kamera ke QR.</p>
+              <a href="#" class="link">Tentang QR Linkert</a>
+            </article>
+            <article class="way">
+              <div class="ph ph--way">
+                <img
+                  src="img/image 55.png"
+                  alt="IMG-19"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </div>
+              <h3>Tautan di bio</h3>
+              <p>Pasang tautan profilmu di bio media sosial.</p>
+              <a href="#" class="link">Pasang di Instagram</a>
+            </article>
+            <article class="way">
+              <div class="ph ph--way">
+                <img
+                  src="img/mockup_community.png"
+                  alt="IMG-20"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </div>
+              <h3>Kartu member komunitas</h3>
+              <p>Satu kartu untuk identitas dan akses khusus anggota.</p>
+              <a href="#community" class="link">Lihat paket Community</a>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- =========================================================
+     9. KARTU DEMO
+     ========================================================= -->
+      <section class="section section--tint">
+        <div class="container split">
+          <div>
+            <h2>Coba sendiri sebelum pesan.</h2>
+            <p class="lead">
+              Scan QR ini atau klik kartunya untuk melihat profil Linkert yang
+              sudah jadi.
+            </p>
+            <div class="btn-row">
+              <a href="#" class="btn btn--primary">Buka kartu demo</a>
+            </div>
+          </div>
+          <div class="demo">
+            <!-- <a
+              href="#"
+              class="ph ph--card demo__card"
+              aria-label="Buka kartu demo"
+              ><span>IMG-21</span
+              ><small>Pratinjau kartu demo 340 × 214</small></a
+            > -->
+            <img
+              src="img/demo_card.png"
+              width="340"
+              height="214"
+              loading="lazy"
+              decoding="async"
+              alt="IMG-21"
+            />
+            <figure class="demo__qr">
+              <div class="ph ph--qr">
+                <img
+                  src="img/linkert_qr_code.png"
+                  alt="IMG-22"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </div>
+              <figcaption>Scan pakai kamera ponsel</figcaption>
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <!-- =========================================================
+     10. LINKERT VS KARTU NAMA KERTAS
+     ========================================================= -->
+      <section class="section">
+        <div class="container">
+          <div class="section-head center">
+            <h2>Kartu nama kertas vs kartu Linkert.</h2>
+          </div>
+          <div class="compare">
+            <div class="compare__col">
+              <h3>Kartu nama kertas</h3>
+              <ul class="checklist checklist--no">
+                <li>Habis dan harus dicetak ulang</li>
+                <li>Isi tidak bisa diubah</li>
+                <li>Tidak bisa menampilkan portofolio</li>
+                <li>Mudah dibuang penerima</li>
+                <li>Hilang berarti data terbuka</li>
+              </ul>
+            </div>
+            <div class="compare__col compare__col--win">
+              <h3>Kartu Linkert</h3>
+              <div class="locked">
+                <div class="ph ph--card">
+                  <img
+                    class="fill"
+                    src="img/gen/card-member.svg"
+                    alt="Kartu member Linkert"
+                    loading="lazy"
+                    decoding="async"
+                  />
+                </div>
+                <div class="locked__overlay">
+                  <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <rect x="5" y="10.5" width="14" height="10" rx="2" />
+                    <path d="M8 10.5V8a4 4 0 0 1 8 0v2.5" />
+                  </svg>
+                  <span>Akses member tersedia di Community</span>
+                  <a href="#community" class="link link--light"
+                    >Lihat Community</a
+                  >
+                </div>
+              </div>
+              <ul class="checklist checklist--yes">
+                <li>Satu kartu untuk dipakai terus</li>
+                <li>Profil bisa diubah kapan saja</li>
+                <li>Portofolio tampil di profil</li>
+                <li>Kontak langsung tersimpan di ponsel</li>
+                <li>Hilang, tautan lama bisa dinonaktifkan</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- =========================================================
+     11. PERSONAL: UNTUK INDIVIDU
+     ========================================================= -->
+      <section class="section section--tint" id="paket">
+        <div class="container" id="personal">
+          <div class="section-head">
+            <p class="eyebrow">Untuk individu · Paket Personal</p>
+            <h2>Kartu pribadimu siap dalam tiga langkah.</h2>
+          </div>
+          <ol class="steps">
+            <li class="step">
+              <span class="step__num">1</span>
+              <h3>Pesan kartu dan pilih desain</h3>
+              <div class="ph ph--way">
+                <img
+                  class="fill"
+                  src="img/gen/step-order-form.svg"
+                  alt="Formulir pesan kartu"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </div>
+            </li>
+            <li class="step">
+              <span class="step__num">2</span>
+              <h3>Isi profil dan pilih template</h3>
+              <div class="ph ph--way">
+                <img
+                  class="fill"
+                  src="img/gen/step-profile.svg"
+                  alt="Profil di ponsel dan pilihan template"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </div>
+            </li>
+            <li class="step">
+              <span class="step__num">3</span>
+              <h3>Terima kartu, lalu tap dan bagikan</h3>
+              <div class="ph ph--way">
+                <img
+                  class="fill"
+                  src="img/gen/step-tap.svg"
+                  alt="Kartu di-tap ke ponsel dan profil terbuka"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </div>
+            </li>
+          </ol>
+          <div class="plan-foot">
+            <ul class="checklist checklist--yes checklist--2col">
+              <li>Desain kartu bisa custom</li>
+              <li>Profil dan portofolio online</li>
+              <li>Ganti isi tanpa cetak ulang</li>
+              <li>QR cadangan</li>
+            </ul>
+            <div class="plan-foot__cta">
+              <p class="price">Harga menyusul</p>
+              <div class="btn-row">
+                <a href="#pesan" class="btn btn--primary" data-plan="personal"
+                  >Pesan Personal</a
+                >
+                <a href="pricing.html" class="btn btn--ghost"
+                  >Lihat detail Personal</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- =========================================================
+     12. COMMUNITY: UNTUK KOMUNITAS
+     ========================================================= -->
+      <section class="section" id="community">
+        <div class="container">
+          <div class="section-head">
+            <p class="eyebrow">Untuk komunitas · Paket Community</p>
+            <h2>Kartu member untuk seluruh anggota komunitasmu.</h2>
+          </div>
+          <ol class="steps">
+            <li class="step">
+              <span class="step__num">1</span>
+              <h3>Desain kartu sesuai identitas komunitas</h3>
+              <div class="ph ph--way">
+                <img
+                  class="fill"
+                  src="img/gen/step-community-design.svg"
+                  alt="Editor desain kartu komunitas"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </div>
+            </li>
+            <li class="step">
+              <span class="step__num">2</span>
+              <h3>Kirim daftar anggota lewat spreadsheet</h3>
+              <div class="ph ph--way">
+                <img
+                  class="fill"
+                  src="img/gen/step-member-list.svg"
+                  alt="Daftar anggota di spreadsheet"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </div>
+            </li>
+            <li class="step">
+              <span class="step__num">3</span>
+              <h3>Kartu dikirim dan akses member aktif</h3>
+              <div class="ph ph--way">
+                <img
+                  class="fill"
+                  src="img/gen/step-message.svg"
+                  alt="Pesan bahwa kartu sudah dikirim dan akses member aktif"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </div>
+            </li>
+          </ol>
+          <div class="plan-foot">
+            <ul class="checklist checklist--yes checklist--2col">
+              <li>Kartu bertanda eksklusif</li>
+              <li>Akses khusus sesuai permintaan komunitas</li>
+              <li>Desain mengikuti identitas komunitas</li>
+              <li>Kartu anggota yang keluar bisa dinonaktifkan</li>
+            </ul>
+            <div class="plan-foot__cta">
+              <p class="price">Harga menyusul</p>
+              <div class="btn-row">
+                <a href="#pesan" class="btn btn--primary" data-plan="community"
+                  >Konsultasi komunitas</a
+                >
+                <a href="pricing.html" class="btn btn--ghost"
+                  >Lihat detail Community</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- =========================================================
+     13. ACCESS: PAKET LENGKAP
+     ========================================================= -->
+      <section class="section section--dark" id="access">
+        <div class="container split">
+          <div>
+            <p class="eyebrow eyebrow--light">Paket Access</p>
+            <h2>Semua fitur Linkert, terhubung jadi satu.</h2>
+            <p class="lead">
+              Untuk komunitas atau organisasi yang butuh lebih dari kartu.
+            </p>
+            <ul class="checklist checklist--yes checklist--light">
+              <li>Semua fitur Community</li>
+              <li>Integrasi antar fitur (rincian menyusul)</li>
+              <li>Pendampingan tim Linkert</li>
+              <li>Prioritas produksi kartu</li>
+              <li>Laporan pemakaian kartu</li>
+            </ul>
+            <p class="price price--light">Harga menyusul</p>
+            <div class="btn-row">
+              <a href="#pesan" class="btn btn--signal" data-plan="access"
+                >Jadwalkan konsultasi</a
+              >
+              <a href="pricing.html" class="btn btn--ghost-light"
+                >Lihat detail Access</a
+              >
+            </div>
+          </div>
+          <div class="stack">
+            <div class="ph ph--feature ph--dark">
+              <img
+                class="fill"
+                src="img/gen/access-cards.svg"
+                alt="Kartu anggota aktif dan nonaktif"
+                loading="lazy"
+                decoding="async"
+              />
+            </div>
+            <div class="ph ph--feature ph--dark">
+              <img
+                class="fill"
+                src="img/gen/access-admin.svg"
+                alt="Dasbor admin komunitas"
+                loading="lazy"
+                decoding="async"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- =========================================================
+     PESAN — tujuan semua tombol "Pesan"
+     ========================================================= -->
+      <section class="section section--tint" id="pesan">
+        <div class="container order">
+          <div class="order__intro">
+            <p class="eyebrow">Pesan kartu</p>
+            <h2>Isi data singkat, tim Linkert yang melanjutkan.</h2>
+            <p class="lead">
+              Setelah formulir dikirim, tim kami menghubungimu lewat WhatsApp
+              untuk desain, pembayaran, dan pengiriman.
+            </p>
+            <ol class="order__steps">
+              <li>
+                <strong>Isi formulir</strong
+                ><span>Pilih paket, produk, dan jumlah kartu.</span>
+              </li>
+              <li>
+                <strong>Diskusi desain</strong
+                ><span
+                  >Tim mengirim pilihan desain kartu dan template profil.</span
+                >
+              </li>
+              <li>
+                <strong>Bayar dan terima kartu</strong
+                ><span
+                  >Kartu diproduksi dan dikirim setelah desain disetujui.</span
+                >
+              </li>
+            </ol>
+          </div>
+
+          <form class="order__form" id="orderForm" novalidate>
+            <fieldset class="field">
+              <legend>Paket</legend>
+              <div class="plan-pick">
+                <label
+                  ><input
+                    type="radio"
+                    name="paket"
+                    value="personal"
+                    checked
+                  /><span
+                    ><strong>Personal</strong
+                    ><small>Untuk individu</small></span
+                  ></label
+                >
+                <label
+                  ><input type="radio" name="paket" value="community" /><span
+                    ><strong>Community</strong
+                    ><small>Untuk komunitas</small></span
+                  ></label
+                >
+                <label
+                  ><input type="radio" name="paket" value="access" /><span
+                    ><strong>Access</strong><small>Paket lengkap</small></span
+                  ></label
+                >
+              </div>
+            </fieldset>
+
+            <div class="field-row">
+              <div class="field">
+                <label for="produk">Produk</label>
+                <select id="produk" name="produk">
+                  <option value="nfc-business-card">
+                    Kartu NFC Business Card
+                  </option>
+                  <option value="kartu-member">Kartu Member Komunitas</option>
+                  <option value="desain-custom">Desain Kartu Custom</option>
+                </select>
+              </div>
+              <div class="field">
+                <label for="jumlah">Jumlah kartu</label>
+                <input
+                  id="jumlah"
+                  name="jumlah"
+                  type="number"
+                  min="1"
+                  max="999"
+                  value="1"
+                  inputmode="numeric"
+                />
+              </div>
+            </div>
+
+            <div class="field">
+              <label for="warna">Warna kartu</label>
+              <select id="warna" name="warna">
+                <option>Putih</option>
+                <option selected>Hitam</option>
+                <option>Biru</option>
+                <option>Kuning</option>
+                <option>Desain custom</option>
+              </select>
+            </div>
+
+            <div class="field">
+              <label for="nama">Nama lengkap</label>
+              <input
+                id="nama"
+                name="nama"
+                type="text"
+                autocomplete="name"
+                required
+              />
+            </div>
+
+            <div class="field">
+              <label for="wa">Nomor WhatsApp</label>
+              <input
+                id="wa"
+                name="wa"
+                type="tel"
+                inputmode="tel"
+                autocomplete="tel"
+                placeholder="08xxxxxxxxxx"
+                required
+              />
+            </div>
+
+            <div class="field" id="komunitasField" hidden>
+              <label for="komunitas">Nama komunitas atau organisasi</label>
+              <input id="komunitas" name="komunitas" type="text" />
+            </div>
+
+            <div class="field">
+              <label for="catatan"
+                >Catatan <span class="opt">(opsional)</span></label
+              >
+              <textarea
+                id="catatan"
+                name="catatan"
+                rows="3"
+                placeholder="Contoh: kartu hitam dengan logo komunitas di depan"
+              ></textarea>
+            </div>
+
+            <p class="form-error" id="orderError" role="alert"></p>
+            <button type="submit" class="btn btn--primary btn--block btn--lg">
+              Kirim pesanan
+            </button>
+
+            <div class="order__done" id="orderDone" hidden>
+              <strong>Pesananmu siap dikirim.</strong>
+              <p id="orderDoneText">
+                Lanjutkan ke WhatsApp untuk mengirim pesan ini ke tim Linkert.
+              </p>
+              <pre id="orderMessage"></pre>
+              <div class="btn-row">
+                <a
+                  class="btn btn--primary"
+                  id="orderWa"
+                  href="https://wa.me/"
+                  target="_blank"
+                  rel="noopener"
+                  >Buka WhatsApp</a
+                >
+                <button type="button" class="btn btn--ghost" id="orderCopy">
+                  Salin pesan
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </section>
+
+      <!-- =========================================================
+     14. PROMO KARTU BENTUK CUSTOM
+     ========================================================= -->
+      <section class="section" id="promo">
+        <div class="container split split--top">
+          <div>
+            <p class="eyebrow">Segera hadir</p>
+            <h2>Kartu yang bentuknya sesuai usahamu.</h2>
+            <p class="lead">
+              Cetak laser yang lebih awet, dan bentuk kartu seperti sisir untuk
+              barbershop atau obeng untuk toko bangunan.
+            </p>
+            <div class="btn-row">
+              <a href="#" class="btn btn--primary">Daftar minat</a>
+            </div>
+          </div>
+          <div class="promo-cards">
+            <figure>
+              <div class="ph ph--card">
+                <img
+                  class="fill"
+                  src="img/gen/promo-laser.svg"
+                  alt="Kartu cetak laser"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </div>
+              <figcaption>Kartu cetak laser</figcaption>
+            </figure>
+            <figure>
+              <div class="ph ph--card">
+                <img
+                  class="fill"
+                  src="img/gen/promo-comb.svg"
+                  alt="Kartu berbentuk sisir"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </div>
+              <figcaption>Bentuk sisir</figcaption>
+            </figure>
+            <figure>
+              <div class="ph ph--card">
+                <img
+                  class="fill"
+                  src="img/gen/promo-screwdriver.svg"
+                  alt="Kartu berbentuk obeng"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </div>
+              <figcaption>Bentuk obeng</figcaption>
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <!-- =========================================================
+     16. FAQ
+     ========================================================= -->
+      <section class="section" id="faq">
+        <div class="container narrow">
+          <div class="section-head center">
+            <h2>Pertanyaan yang sering muncul.</h2>
+          </div>
+          <div class="faq" id="faqList">
+            <div class="faq__item">
+              <button class="faq__q" aria-expanded="false">
+                Berapa harga tiap paket?
+              </button>
+              <div class="faq__a">
+                <p>
+                  [Jawaban menyusul: harga Personal, Community, dan Access belum
+                  ditetapkan.]
+                </p>
+              </div>
+            </div>
+            <div class="faq__item">
+              <button class="faq__q" aria-expanded="false">
+                Apakah penerima perlu aplikasi?
+              </button>
+              <div class="faq__a">
+                <p>
+                  Tidak. Profilmu terbuka langsung di browser ponsel penerima.
+                </p>
+              </div>
+            </div>
+            <div class="faq__item">
+              <button class="faq__q" aria-expanded="false">
+                Ponsel apa saja yang bisa membaca kartu?
+              </button>
+              <div class="faq__a">
+                <p>
+                  Ponsel yang punya fitur NFC, termasuk banyak ponsel Android
+                  dan iPhone keluaran baru. [Tim perlu menguji dan mencantumkan
+                  daftar pastinya.]
+                </p>
+              </div>
+            </div>
+            <div class="faq__item">
+              <button class="faq__q" aria-expanded="false">
+                Bagaimana kalau ponsel penerima tidak punya NFC?
+              </button>
+              <div class="faq__a">
+                <p>
+                  Penerima bisa memindai QR di bagian belakang kartu memakai
+                  kamera ponsel.
+                </p>
+              </div>
+            </div>
+            <div class="faq__item">
+              <button class="faq__q" aria-expanded="false">
+                Apakah butuh internet?
+              </button>
+              <div class="faq__a">
+                <p>
+                  Ya. Ponsel penerima perlu internet untuk membuka halaman
+                  profilmu.
+                </p>
+              </div>
+            </div>
+            <div class="faq__item">
+              <button class="faq__q" aria-expanded="false">
+                Bisakah isi profil diubah setelah kartu jadi?
+              </button>
+              <div class="faq__a">
+                <p>
+                  Bisa. Kartu menyimpan tautan, jadi isi profil bisa diubah
+                  kapan saja tanpa mencetak ulang kartu.
+                </p>
+              </div>
+            </div>
+            <div class="faq__item">
+              <button class="faq__q" aria-expanded="false">
+                Apa yang terjadi kalau kartu hilang?
+              </button>
+              <div class="faq__a">
+                <p>
+                  Lapor ke tim Linkert. Tautan lama kami nonaktifkan, lalu kamu
+                  mendapat kartu baru dengan tautan baru.
+                </p>
+              </div>
+            </div>
+            <div class="faq__item">
+              <button class="faq__q" aria-expanded="false">
+                Bisakah desain kartu dibuat custom?
+              </button>
+              <div class="faq__a">
+                <p>
+                  Bisa. Desain kartu bisa disesuaikan dengan gayamu atau
+                  identitas komunitasmu.
+                </p>
+              </div>
+            </div>
+            <div class="faq__item">
+              <button class="faq__q" aria-expanded="false">
+                Berapa lama produksi dan pengiriman?
+              </button>
+              <div class="faq__a">
+                <p>
+                  [Jawaban menyusul: waktu produksi dan pengiriman belum
+                  ditetapkan.]
+                </p>
+              </div>
+            </div>
+            <div class="faq__item">
+              <button class="faq__q" aria-expanded="false">
+                Apa beda Personal, Community, dan Access?
+              </button>
+              <div class="faq__a">
+                <p>
+                  Personal untuk kartu pribadi. Community untuk kartu member
+                  komunitas dengan akses khusus. Access mencakup semua fitur
+                  Community ditambah integrasi dan pendampingan. [Rincian Access
+                  menyusul.]
+                </p>
+              </div>
+            </div>
+            <div class="faq__item">
+              <button class="faq__q" aria-expanded="false">
+                Berapa minimal anggota untuk paket Community?
+              </button>
+              <div class="faq__a">
+                <p>[Jawaban menyusul: jumlah minimal belum ditetapkan.]</p>
+              </div>
+            </div>
+            <div class="faq__item">
+              <button class="faq__q" aria-expanded="false">
+                Di mana data profil saya disimpan?
+              </button>
+              <div class="faq__a">
+                <p>
+                  [Jawaban menyusul: tempat penyimpanan data belum diputuskan.]
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- =========================================================
+     17. CTA AKHIR
+     ========================================================= -->
+      <section class="section final">
+        <div class="container center">
+          <h2>Siap punya kartu yang diingat orang?</h2>
+          <p class="lead">
+            Pilih paketmu, kami bantu dari desain sampai kartu sampai di
+            tanganmu.
+          </p>
+          <div class="btn-row btn-row--center">
+            <a href="#pesan" class="btn btn--primary btn--lg"
+              >Pesan kartu sekarang</a
+            >
+          </div>
+        </div>
+        <div class="final__row" aria-label="Contoh kartu profil">
+          <article class="pcard">
+            <div class="ph ph--photo">
+              <img
+                class="fill"
+                src="img/gen/avatar-alya.svg"
+                alt=""
+                loading="lazy"
+                decoding="async"
+              />
+            </div>
+            <div class="pcard__body">
+              <strong>Arya Rahman</strong><span>Designer</span
+              ><button class="btn btn--primary btn--xs js-save">
+                Simpan kontak
+              </button>
+            </div>
+          </article>
+          <article class="pcard">
+            <div class="ph ph--photo">
+              <img
+                class="fill"
+                src="img/gen/avatar-dimas.svg"
+                alt=""
+                loading="lazy"
+                decoding="async"
+              />
+            </div>
+            <div class="pcard__body">
+              <strong>Dimas Pratama</strong><span>Programmer</span
+              ><button class="btn btn--primary btn--xs js-save">
+                Simpan kontak
+              </button>
+            </div>
+          </article>
+          <article class="pcard">
+            <div class="ph ph--photo">
+              <img
+                class="fill"
+                src="img/gen/avatar-nadia.svg"
+                alt=""
+                loading="lazy"
+                decoding="async"
+              />
+            </div>
+            <div class="pcard__body">
+              <strong>Naufal Putra</strong><span>Finance</span
+              ><button class="btn btn--primary btn--xs js-save">
+                Simpan kontak
+              </button>
+            </div>
+          </article>
+          <article class="pcard">
+            <div class="ph ph--photo">
+              <img
+                class="fill"
+                src="img/gen/avatar-raka.svg"
+                alt=""
+                loading="lazy"
+                decoding="async"
+              />
+            </div>
+            <div class="pcard__body">
+              <strong>Raka Aditya</strong><span>Marketing</span
+              ><button class="btn btn--primary btn--xs js-save">
+                Simpan kontak
+              </button>
+            </div>
+          </article>
+          <article class="pcard">
+            <div class="ph ph--photo">
+              <img
+                class="fill"
+                src="img/gen/avatar-sekar.svg"
+                alt=""
+                loading="lazy"
+                decoding="async"
+              />
+            </div>
+            <div class="pcard__body">
+              <strong>Satria Wibowo</strong><span>Sales</span
+              ><button class="btn btn--primary btn--xs js-save">
+                Simpan kontak
+              </button>
+            </div>
+          </article>
+          <article class="pcard">
+            <div class="ph ph--photo">
+              <img
+                class="fill"
+                src="img/gen/avatar-bima.svg"
+                alt=""
+                loading="lazy"
+                decoding="async"
+              />
+            </div>
+            <div class="pcard__body">
+              <strong>Bima Santoso</strong><span>Consulting</span
+              ><button class="btn btn--primary btn--xs js-save">
+                Simpan kontak
+              </button>
+            </div>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <!-- =========================================================
+     18. FOOTER
+     ========================================================= -->
+    <footer class="footer" id="footer">
+      <div class="container">
+        <div class="footer__top">
+          <img
+            class="logo"
+            src="img/logo 140x40.png"
+            alt="Logo Linkert"
+            width="111"
+            height="50"
+          />
+          <div class="footer__contact">
+            <span>WhatsApp: (nomor menyusul)</span>
+            <span>Email: (alamat menyusul)</span>
+          </div>
+        </div>
+
+        <div class="footer__cols">
+          <div>
+            <h4>Produk</h4>
+            <a href="nfc-business-card.html">Kartu NFC Business Card</a>
+            <a href="#community">Kartu Member Komunitas</a>
+            <a href="#promo">Desain Kartu Custom</a>
+            <a href="#promo">Kartu Premium</a>
+          </div>
+          <div>
+            <h4>Sumber</h4>
+            <a href="pricing.html">Pricing</a>
+            <a href="#">Blog</a>
+            <a href="#faq">FAQ</a>
+            <a href="#">Panduan</a>
+          </div>
+          <div>
+            <h4>Perusahaan</h4>
+            <a href="#">Tentang kami</a>
+            <a href="#">Karier</a>
+            <a href="#footer">Hubungi kami</a>
+          </div>
+          <div>
+            <h4>Legal</h4>
+            <a href="#">Kebijakan privasi</a>
+            <a href="#">Syarat layanan</a>
+            <a href="#">Kebijakan pengembalian</a>
+            <a href="#">Kebijakan pengiriman</a>
+          </div>
+        </div>
+
+        <div class="footer__bottom">
+          <span>© <span id="year">2026</span> Linkert</span>
+          <label class="lang">
+            <span class="sr-only">Pilih bahasa</span>
+            <select id="langSelect">
+              <option value="id" selected>Indonesia</option>
+              <option value="en">English</option>
+            </select>
+          </label>
+          <div class="socials">
+            <a href="#" aria-label="Instagram Linkert">IG</a>
+            <a href="#" aria-label="LinkedIn Linkert">in</a>
+            <a href="#" aria-label="TikTok Linkert">TT</a>
+            <a href="#" aria-label="YouTube Linkert">YT</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+    <script src="mockups.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
